@@ -22,12 +22,12 @@ jobs:
     - name: Restore Tool
       run: dotnet tool restore
     - name: Build
-      run: dotnet build -c Release ./SampleWebSite/SampleWebSite.sln
-    - name: Archive production artifacts
-      uses: actions/upload-artifact@v1
+      run: dotnet build -c Release      
+    - uses: actions/upload-artifact@v1
       with:
-        name: dist
-        path: dist
+        name: artifact
+        path: ./SampleWebSite/SampleWebSite/bin/Release/netcoreapp3.0/
+    - run: dotnet run --configuration Release --project ./SampleWebSite/
     - name: Azure Pipelines Action
       uses: Azure/pipelines@releases/v1
       with:
