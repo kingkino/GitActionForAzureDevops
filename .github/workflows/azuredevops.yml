@@ -36,5 +36,5 @@ jobs:
         # 対象のPipeline名
         azure-pipeline-name: githubactiontest
         # AzureDevopsのプライベートアクセストークン
-        azure-devops-token: ${{ AzureDevOpsToken }}
+        azure-devops-token: ${{secrets.AzureDevOpsToken}}
   
