@@ -22,7 +22,7 @@ jobs:
     - name: Restore Tool
       run: dotnet tool restore
     - name: Build
-      run: dotnet build -c Debug SampleWebSite.csproj
+      run: dotnet build -c Release ./SampleWebSite/SampleWebSite/SampleWebSite.csproj
 
   pipeline:
     runs-on: ubuntu-latest
@@ -36,5 +36,5 @@ jobs:
         # 対象のPipeline名
         azure-pipeline-name: githubactiontest
         # AzureDevopsのプライベートアクセストークン
-        azure-devops-token: 
+        azure-devops-token: aaa
   
