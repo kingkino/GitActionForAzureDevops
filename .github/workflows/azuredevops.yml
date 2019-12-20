@@ -24,7 +24,7 @@ jobs:
     - name: Lint
       run: dotnet format --check --dry-run
     - name: Build
-      run: dotnet build -c Debug
+      run: dotnet build -c Debug SampleWebSite.csproj
 
   pipeline:
     runs-on: ubuntu-latest
