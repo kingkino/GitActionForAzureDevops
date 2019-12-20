@@ -27,7 +27,7 @@ jobs:
       with:
         name: artifact
         path: ./SampleWebSite/SampleWebSite/bin/Release/netcoreapp3.0/
-    - run: dotnet run --configuration Release --project ./SampleWebSite/
+    - run: dotnet run --configuration Release --project ./SampleWebSite/SampleWebSite/
     - name: Azure Pipelines Action
       uses: Azure/pipelines@releases/v1
       with:
