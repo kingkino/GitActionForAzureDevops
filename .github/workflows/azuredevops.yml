@@ -15,6 +15,6 @@ jobs:
         # 対象のプロジェクト名を含むAzreDevOpsの組織URL
         azure-devops-project-url: https://dev.azure.com/kokoni-labo/kokoni-githubactions
         # 対象のPipeline名
-        azure-pipeline-name: githubactiontest
+        azure-pipeline-name: kingkino.GitActionForAzureDevops
         # AzureDevopsのプライベートアクセストークン
         azure-devops-token: ${{secrets.AzureDevOpsToken}}
